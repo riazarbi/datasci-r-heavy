@@ -1,4 +1,4 @@
-FROM riazarbi/docker-r-8020:latest
+FROM riazarbi/datasci-r-8020:latest
 
 LABEL authors="Riaz Arbi,Gordon Inggs"
 
