@@ -127,6 +127,6 @@ RUN install2.r --error -n 2 -s --deps TRUE $r_packages
 RUN mkdir /sen2cor_255 \
  && Rscript -e 'sen2r:::install_sen2cor("/sen2cor_255", version = "2.5.5")' \
  && chmod -R 0755 /sen2cor_255 \
- && Rscript -e 'library(kableExtra')
+ && Rscript -e 'library(kableExtra)'
 
 USER $NB_USER
