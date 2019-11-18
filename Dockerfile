@@ -59,6 +59,7 @@ ARG r_packages="\
 # presentation
     flexdashboard \
     kableExtra \
+    bookdown \
 #    evaluate \
 #    highr \
 #    markdown \
