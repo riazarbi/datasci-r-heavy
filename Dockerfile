@@ -39,8 +39,9 @@ ARG r_packages="\
     profvis \ 
 # hash tables
     hashmap \  
-# interactive maps
+# interactivity
     leaflet \
+    rhandsontable \
 # geoprocessing
     fasterize \
     lidR \
