@@ -126,7 +126,7 @@ RUN install2.r --error -n 2 -s --deps TRUE $r_packages
 
 # Configure sen2r
 RUN mkdir /sen2cor_280 \
- && Rscript -e 'sen2r:::install_sen2cor("/sen2cor_280", version = "2.8.0)' \
+ && Rscript -e 'sen2r:::install_sen2cor("/sen2cor_280", version = "2.8.0")' \
  && chmod -R 0755 /sen2cor_280 
 
 USER $NB_USER
