@@ -60,6 +60,10 @@ ARG r_packages="\
 # presentation
     flexdashboard \
     bookdown \
+# training 
+    nycflights13 \
+    gapminder \
+    Lahman \
 #    evaluate \
 #    highr \
 #    markdown \
