@@ -25,7 +25,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libjq-dev \
     libprotobuf-dev \
     protobuf-compiler \
-    python-gdal \
+    #python-gdal \
     gdal-bin \
     aria2 \
     libpython-dev \
