@@ -64,6 +64,8 @@ ARG r_packages="\
     nycflights13 \
     gapminder \
     Lahman \
+# statistics
+    caTools \
 #    evaluate \
 #    highr \
 #    markdown \
