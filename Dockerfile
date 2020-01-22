@@ -64,8 +64,8 @@ ARG r_packages="\
     nycflights13 \
     gapminder \
     Lahman \
-# statistics
-    caTools \
+# h2o dependencies 
+    h2o \
 #    evaluate \
 #    highr \
 #    markdown \
@@ -127,7 +127,7 @@ ARG r_packages="\
 #    odbc \
     "
 
-# Install
+# Install 
 RUN install2.r --error -n 2 -s --deps TRUE $r_packages 
 
 # Configure sen2r
