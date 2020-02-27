@@ -66,6 +66,8 @@ ARG r_packages="\
     Lahman \
 # h2o dependencies 
     h2o \
+# automation
+    blastula \
 #    evaluate \
 #    highr \
 #    markdown \
