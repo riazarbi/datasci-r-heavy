@@ -42,6 +42,7 @@ ARG r_packages="\
 # interactivity
     leaflet \
     rhandsontable \
+    highcharter \
 # geoprocessing
     fasterize \
     lidR \
