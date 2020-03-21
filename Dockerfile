@@ -38,8 +38,6 @@ RUN DEBIAN_FRONTEND=noninteractive \
 ARG r_packages="\
 # inspect code performance
     profvis \ 
-# hash tables
-    hashmap \  
 # interactivity
     leaflet \
     rhandsontable \
