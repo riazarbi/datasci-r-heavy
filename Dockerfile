@@ -41,6 +41,7 @@ ARG r_packages="\
 # interactivity
     leaflet \
     leaflet.extras \
+    leafpop \
     rhandsontable \
     highcharter \
 # geoprocessing
