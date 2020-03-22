@@ -40,6 +40,7 @@ ARG r_packages="\
     profvis \ 
 # interactivity
     leaflet \
+    leaflet.extras \
     rhandsontable \
     highcharter \
 # geoprocessing
