@@ -131,9 +131,10 @@ ARG r_packages="\
     "
 
 # Install 
-RUN Rscript -e 'update.packages(ask = FALSE)'
+#RUN Rscript -e 'update.packages(ask = FALSE)'
 RUN install2.r --error -n 2 -s --deps TRUE $r_packages 
 
+RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
 # Configure sen2r
 #RUN mkdir /sen2cor_280 \
 # && Rscript -e 'sen2r:::install_sen2cor("/sen2cor_280", version = "2.8.0")' \
