@@ -70,6 +70,7 @@ ARG r_packages="\
     h2o \
 # automation
     blastula \
+    tidyRSS \
 #    evaluate \
 #    highr \
 #    markdown \
