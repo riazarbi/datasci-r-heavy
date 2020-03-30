@@ -50,7 +50,8 @@ ARG r_packages="\
     sen2r \
     geojsonlint \
 # plotting extras
-    ggExtra \ 
+    ggExtra \
+    sparkline \
 # process mining
     bupaR \
     edeaR \ 
