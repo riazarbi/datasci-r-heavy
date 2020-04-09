@@ -63,6 +63,7 @@ ARG r_packages="\
 # presentation
     flexdashboard \
     bookdown \
+    gt \
 # training 
     nycflights13 \
     gapminder \
