@@ -49,6 +49,7 @@ ARG r_packages="\
     lidR \
     sen2r \
     geojsonlint \
+    spatstat \
 # plotting extras
     ggExtra \
     sparkline \
