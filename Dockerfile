@@ -74,6 +74,8 @@ ARG r_packages="\
 # automation
     blastula \
     tidyRSS \
+# munging 
+    janitor \
 #    evaluate \
 #    highr \
 #    markdown \
