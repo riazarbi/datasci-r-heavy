@@ -76,6 +76,7 @@ ARG r_packages="\
     tidyRSS \
 # munging 
     janitor \
+    googlesheets4 \
 #    evaluate \
 #    highr \
 #    markdown \
