@@ -77,6 +77,7 @@ ARG r_packages="\
 # munging 
     janitor \
     googlesheets4 \
+    xlsx \
 #    evaluate \
 #    highr \
 #    markdown \
