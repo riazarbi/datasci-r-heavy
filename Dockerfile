@@ -30,6 +30,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     gdal-bin \
     aria2 \
     libpython-dev \
+    libavfilter-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
@@ -44,6 +45,8 @@ ARG r_packages="\
     leafpop \
     rhandsontable \
     highcharter \
+    av \
+    gganimate \
 # geoprocessing
     fasterize \
     lidR \
