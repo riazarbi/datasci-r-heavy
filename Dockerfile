@@ -4,8 +4,6 @@ LABEL authors="Riaz Arbi,Gordon Inggs"
 
 USER root
 
-ENV PHANTOM_JS="phantomjs-2.1.1-linux-x86_64"
-
 # BASE BACKAGES =============================================================
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get update && \
@@ -33,27 +31,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
     aria2 \
     libpython-dev \
     libavfilter-dev \
-    # for phantomjs \
-    build-essential \
-    chrpath \
-    libssl-dev \
-    libxft-dev \
-    libfreetype6 \
-    libfreetype6-dev \
-    libfontconfig1 \
-    libfontconfig1-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
-
-# Phantom JS
-RUN mkdir /tmp/phantomjs \
- && cd /tmp/phantomjs \
- && wget https://github.com/Medium/phantomjs/releases/download/v2.1.1/$PHANTOM_JS.tar.bz2 \
- && tar xvjf $PHANTOM_JS.tar.bz2 \ 
- && mv $PHANTOM_JS /usr/local/share \
- && ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin \
- && rm -rf /tmp/phantomjs \
- && phantomjs --version
 
 # RPACKAGES =================================================================
 
