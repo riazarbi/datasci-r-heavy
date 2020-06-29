@@ -31,6 +31,9 @@ RUN DEBIAN_FRONTEND=noninteractive \
     aria2 \
     libpython-dev \
     libavfilter-dev \
+    # for orca \
+    npm \
+    xvfb \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
