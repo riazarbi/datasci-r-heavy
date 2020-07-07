@@ -31,9 +31,6 @@ RUN DEBIAN_FRONTEND=noninteractive \
     aria2 \
     libpython-dev \
     libavfilter-dev \
-    # for orca \
-    npm \
-    xvfb \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
@@ -46,6 +43,7 @@ ARG r_packages="\
     leaflet \
     leaflet.extras \
     leafpop \
+    leaftime \
     rhandsontable \
     highcharter \
     av \
@@ -150,9 +148,6 @@ ARG r_packages="\
 RUN install2.r --error -n 2 -s --deps TRUE $r_packages 
 
 RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
-
-# INSTALL ORCA FOR PLOTLY
-RUN npm install -g electron@6.1.4 orca
 
 # Configure sen2r
 #RUN mkdir /sen2cor_280 \
