@@ -54,10 +54,11 @@ ARG r_packages="\
     sen2r \
     geojsonlint \
     spatstat \
-# plotting extras
+# graphics extras
     ggExtra \
     sparkline \
     processx \
+    webshot \
 # process mining
     bupaR \
     edeaR \ 
@@ -148,6 +149,7 @@ ARG r_packages="\
 RUN install2.r --error -n 2 -s --deps TRUE $r_packages 
 
 RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
+RUN Rscript -e 'webshot::install_phantomjs()'
 
 # Configure sen2r
 #RUN mkdir /sen2cor_280 \
