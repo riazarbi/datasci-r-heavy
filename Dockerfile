@@ -32,6 +32,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     aria2 \
     libpython-dev \
     libavfilter-dev \
+    libgsl-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
