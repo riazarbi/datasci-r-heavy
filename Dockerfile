@@ -12,6 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     cmake \
     make \
     gcc \
+    cargo \
     libsodium-dev \
     libcairo2-dev \
     libudunits2-dev \
