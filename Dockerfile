@@ -30,7 +30,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     #python-gdal \
     gdal-bin \
     aria2 \
-    libpython-dev \
+    libpython2-dev \
     libavfilter-dev \
     libgsl-dev \
     libfftw3-dev \
