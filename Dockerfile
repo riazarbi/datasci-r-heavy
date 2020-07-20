@@ -52,8 +52,8 @@ ARG r_packages="\
     gganimate \
 # geoprocessing
     fasterize \
-    lidR \
-    sen2r \
+    #lidR \
+    #sen2r \
     geojsonlint \
     spatstat \
 # graphics extras
@@ -86,65 +86,6 @@ ARG r_packages="\
     janitor \
     googlesheets4 \
     xlsx \
-#    evaluate \
-#    highr \
-#    markdown \
-#    htmltools \
-#    rprojroot \
-#    bookdown \
-#    gridExtra \
-#    markdown \
-#    igraph \
-#    RCurl \
-#    jsonlite \
-#    RJSONIO \
-#    geojsonio \
-#    repr \
-#    crayon \ 
-#    uuid \
-#    digest \
-#    caTools \
-#    shinythemes \
-#    shinyBS \
-#    shinyLP \
-#    keras \
-#    xlsx \
-#    network \
-#    sna \
-#    visNetwork \
-#    threejs \
-#    networkD3 \
-#    ndtv \
-#    factoextra \
-#    arules \
-#    DiagrammeRsvg \
-#    arulesViz \
-#    kohonen \
-#    dummies \ 
-#    tempR \
-#    WDI \
-#    smacof \ 
-#    cluster \ 
-#    ggmap \
-#    googleway \ 
-#    RJSONIO \
-#    xesreadR \
-#    petrinetR \
-#    prophet \
-#    timevis \ 
-#    kableExtra \
-#    evaluate \
-#    crayon \
-#    pbdZMQ \
-#    esquisse \
-#    shinydashboard \ 
-#    rasterVis \
-#    viridis \
-#    caret \
-#    drake \ 
-#    RSQLite \
-#    writexl \ 
-#    odbc \
     "
 
 # Install 
