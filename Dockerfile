@@ -23,7 +23,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libgl-dev \
     libglu-dev \
     libfreetype6-dev \
-    libv8-3.14-dev \
+    libnode-dev \
     libjq-dev \
     libprotobuf-dev \
     protobuf-compiler \
