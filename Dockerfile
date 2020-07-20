@@ -35,6 +35,12 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libgsl-dev \
     libfftw3-dev \
     libxml2-dev \
+ # Install chromium browser 
+ && apt-get --fix-broken install \
+ && apt-get install gdebi-core libappindicator3-1 libgbm1 libgtk-3-0 libxcursor1 \
+ && wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+ && dpkg -i google-chrome-stable_current_amd64.deb \
+ && rm -rf google-chrome-stable_current_amd64.deb \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
@@ -94,11 +100,6 @@ ARG r_packages="\
 RUN install2.r --error -n 2 -s --deps TRUE $r_packages 
 
 RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
-RUN Rscript -e 'webshot::install_phantomjs()'
-
-# Configure sen2r
-#RUN mkdir /sen2cor_280 \
-# && Rscript -e 'sen2r:::install_sen2cor("/sen2cor_280", version = "2.8.0")' \
-# && chmod -R 0755 /sen2cor_280 
+RUN Rscript -e 'remotes::install_github("rstudio/webshot2")'
 
 USER $NB_USER
