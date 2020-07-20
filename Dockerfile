@@ -33,6 +33,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libpython-dev \
     libavfilter-dev \
     libgsl-dev \
+    libfftw3-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
