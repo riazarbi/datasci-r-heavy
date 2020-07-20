@@ -34,6 +34,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libavfilter-dev \
     libgsl-dev \
     libfftw3-dev \
+    libxml2-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
 
