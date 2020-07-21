@@ -100,6 +100,6 @@ ARG r_packages="\
 RUN install2.r --error -n 2 -s --deps TRUE $r_packages 
 
 RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
-RUN Rscript -e 'remotes::install_github("rstudio/webshot2")'
+RUN Rscript -e 'remotes::install_github("rstudio/webshot2", dependencies = TRUE)'
 
 USER $NB_USER
