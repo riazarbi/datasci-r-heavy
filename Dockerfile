@@ -7,8 +7,11 @@ USER root
 # BASE BACKAGES =============================================================
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get update && \
+    DEBIAN_FRONTEND=noninteractive \
+    ACCEPT_EULA=Y \
     apt-get upgrade -y && \
-    apt-get install -y --no-install-recommends \
+    DEBIAN_FRONTEND=noninteractive \
+    ACCEPT_EULA=Y apt-get install -y --no-install-recommends \
     cmake \
     make \
     gcc \
