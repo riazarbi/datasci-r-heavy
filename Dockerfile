@@ -1,4 +1,4 @@
-FROM riazarbi/datasci-r-8020:latest
+FROM riazarbi/datasci-r-8020:bionic
 
 LABEL authors="Riaz Arbi,Gordon Inggs"
 
@@ -23,19 +23,19 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libgl-dev \
     libglu-dev \
     libfreetype6-dev \
-    libnode-dev \
+    libv8-3.14-dev \
     libjq-dev \
     libprotobuf-dev \
     protobuf-compiler \
     #python-gdal \
     gdal-bin \
     aria2 \
-    libpython2-dev \
+    libpython-dev \
     libavfilter-dev \
     libgsl-dev \
     libfftw3-dev \
     libxml2-dev \
- # Install chromium browser 
+ # Install chromium browser for webshot2
  && apt-get --fix-broken install \
  && apt-get install -y gdebi-core libappindicator3-1 libgbm1 libgtk-3-0 libxcursor1 \
  && wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
@@ -55,13 +55,11 @@ ARG r_packages="\
     leafpop \
     leaftime \
     rhandsontable \
-    highcharter \
+    #highcharter \
     av \
     gganimate \
 # geoprocessing
     fasterize \
-    #lidR \
-    #sen2r \
     geojsonlint \
     spatstat \
 # graphics extras
