@@ -94,6 +94,8 @@ ARG r_packages="\
     janitor \
     googlesheets4 \
     xlsx \
+# actual stats \
+    caTools \
     "
 
 # Install 
