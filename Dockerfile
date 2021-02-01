@@ -1,6 +1,7 @@
 FROM riazarbi/datasci-r-8020:focal
 
-LABEL authors="Riaz Arbi,Gordon Inggs"
+LABEL authors="Riaz Arbi,Gordon Inggs" \
+      release="20210201"
 
 USER root
 
