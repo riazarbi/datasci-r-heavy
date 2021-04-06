@@ -1,7 +1,7 @@
 FROM riazarbi/datasci-r-8020:focal
 
 LABEL authors="Riaz Arbi,Gordon Inggs" \
-      release="20210329"
+      release="20210406"
 
 USER root
 
@@ -97,6 +97,8 @@ ARG r_packages="\
     xlsx \
 # actual stats \
     caTools \
+# database \
+    RPostgres \
     "
 
 # Install 
