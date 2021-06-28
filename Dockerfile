@@ -95,6 +95,7 @@ ARG r_packages="\
     janitor \
     googlesheets4 \
     xlsx \
+    snakecase \
 # actual stats \
     caTools \
 # database \
