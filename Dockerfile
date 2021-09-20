@@ -76,6 +76,7 @@ ARG r_packages="\
     eventdataR \  
     processmapR \
     processmonitR \ 
+    processanimateR \
 # parallel processing
     doParallel \
 # presentation
