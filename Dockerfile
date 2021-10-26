@@ -97,10 +97,14 @@ ARG r_packages="\
     googlesheets4 \
     xlsx \
     snakecase \
+    widyr \
 # actual stats \
     caTools \
 # database \
     RPostgres \
+# text mining \
+   textdata \
+   tidytext \
     "
 
 # Install 
