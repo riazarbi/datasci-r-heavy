@@ -112,5 +112,6 @@ RUN install2.r --skipinstalled --error  --ncpus 3 --deps TRUE -l $R_LIBS_SITE  $
 
 RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
 RUN Rscript -e 'remotes::install_github("rstudio/webshot2", dependencies = TRUE)'
+RUN /usr/local/bin/fix-permissions $HOME 
 
 USER $NB_USER
