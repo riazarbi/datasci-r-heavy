@@ -108,7 +108,7 @@ ARG r_packages="\
 # Install 
 RUN install2.r --skipinstalled --error  --ncpus 3 --deps TRUE -l $R_LIBS_SITE  $r_packages 
 
-RUN install2.r --skipinstalled --error  --ncpus 3 --deps FALSE -l $R_LIBS_SITE  stars
+RUN install2.r --skipinstalled --error  --ncpus 3 --deps FALSE -l $R_LIBS_SITE  lwgeom stars
 RUN Rscript -e 'devtools::install_github("homerhanumat/bpexploder")'
 RUN Rscript -e 'remotes::install_github("rstudio/webshot2", dependencies = TRUE)'
 RUN /usr/local/bin/fix-permissions $HOME 
