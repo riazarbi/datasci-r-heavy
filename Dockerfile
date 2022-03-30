@@ -65,6 +65,7 @@ ARG r_packages="\
     #sen2r \
     geojsonlint \
     spatstat \
+    stars \
 # graphics extras
     ggExtra \
     sparkline \
