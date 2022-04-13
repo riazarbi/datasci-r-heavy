@@ -103,6 +103,8 @@ ARG r_packages="\
 # text mining \
    textdata \
    tidytext \
+# timeseries \
+   timetk \
     "
 
 # Install 
