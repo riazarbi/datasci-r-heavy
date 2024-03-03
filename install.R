@@ -70,6 +70,3 @@ Sys.setenv("NOT_CRAN" = TRUE)
 # Install packages
 if(length(new.packages)) install.packages(new.packages)
 
-# Custom packages
-devtools::install_github("homerhanumat/bpexploder")
-remotes::install_github("rstudio/webshot2", dependencies = TRUE)

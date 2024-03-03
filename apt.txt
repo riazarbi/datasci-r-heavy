@@ -5,7 +5,6 @@ cargo
 libsodium-dev
 libcairo2-dev 
 libudunits2-dev 
-libgdal-dev 
 libgeos++-dev 
 libproj-dev 
 libx11-dev 
