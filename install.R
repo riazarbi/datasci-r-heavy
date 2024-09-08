@@ -21,6 +21,7 @@ list.of.packages <- c(
     "sparkline",
     "processx",
     "webshot",
+    "imager",
 # process mining
     "bupaR",
     "edeaR",

@@ -21,3 +21,8 @@ libavfilter-dev
 libgsl-dev 
 libfftw3-dev 
 libxml2-dev 
+libtiff-dev 
+libicu-dev
+libgmp-dev
+libpng-dev
+libglpk-dev
