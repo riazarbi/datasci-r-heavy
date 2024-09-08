@@ -17,7 +17,6 @@ libprotobuf-dev
 protobuf-compiler 
 gdal-bin 
 aria2 
-libpython2-dev 
 libavfilter-dev 
 libgsl-dev 
 libfftw3-dev 
